@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(236, 226, 226);
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0%;
+}
+div{
+    font-size: 16px;
+}
+.header{
+    background-color: rgb(43, 42, 110);
+    margin: 0%;
+    padding: 50px; /*la mia soluzione è corretta*/
+     /*lui non ha messo il padding (lo ha inserito dopo per fare un esempio) ma ha inserito la regola min-height:250px*/
+    /*con la min-height, per centrare in verticale il testo, in questo caso che c'è una sola riga di testo
+    si inserisce una line-height di 250px ed il testo si piazzerà al centro dell Header*/
+    text-align: center;
+    font-size: 32px;
+    color: orange;
+    text-shadow: 2px 1px beige;
+    word-spacing: 3px; /*regola che non ho messo io ma l'ha messa il prof*/
+    text-transform: uppercase; /*regola che non ho messo io ma l'ha messa il prof*/
+}
+
+div#main{
+    padding: 20px 20px 0;
+    background-color: beige;
+}
+.info{
+    background-color: orange;
+    border: 3px solid black;
+    text-align:left;
+    padding: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+abbr{
+    text-decoration: none;
+    font-style: italic;
+}
+h2{
+    text-align: center;
+}
+.info li{  /*aggiungendo .info stiamo dando una proprietà a tutti gli li presenti sotto info*/
+    
+    list-style-image: url("../../assets/img/icons8.png");   
+}
+.card-container{
+    font-size: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+.card-container p{
+    margin: 0;
+    padding: 20px;
+    
+
+
+}
+.pianeta-card{
+    width:calc(33.333333% - 20px); 
+    border: 2px solid black;
+    font-size: 16px;
+    padding: 20px 0;
+    display: inline-block; 
+    margin: 10px;   
+}
+.pianeta-card__head{
+    border-bottom: 2px ridge black;
+    padding-bottom: 20px;
+    margin:0;
+}
+.pianeta-card h3{
+    text-align:center;
+    margin: 0;
+}
+.pianeta-card__descrizione{
+  
+    padding: 3px;
+    font-size: 16px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+.pianeta-card__footer{
+    text-align: center;
+    border-top: 2px ridge black;
+    padding-top: 20px;
+    font-size: 20px;
+    cursor:pointer;
+
+}
+.pianeta__card--boundary-left{ /*i due trattini -- vuol dire che è una variazione ad una regola*/
+    width: calc(33.333333% - 10px); 
+    margin-left: 0; /*queste sono le card che si trovano sulla sinistra*/
+
+}
+.pianeta__card--boundary-right{
+    margin-right: 0;
+    width: calc(33.333333% - 10px);
+}
+.author{
+    color: blue;
+    text-decoration: underline;
+}
+address{
+    display: inline-block;
+}
+dt{
+    display: inline-block;
+    min-width: 150px;
+    
+}
+dd{
+    display: inline-block;
+}
+div#footer{
+    background-color: orange;
+    padding:20px;
+    margin: 0%;
+}
