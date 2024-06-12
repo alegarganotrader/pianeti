@@ -93,15 +93,15 @@ h2{
     font-size: 20px;
     cursor:pointer;
 
-}
-.pianeta__card--boundary-left{ /*i due trattini -- vuol dire che è una variazione ad una regola*/
+/* }
+.pianeta__card--boundary-left{ /*i due trattini -- vuol dire che è una variazione ad una regola
     width: calc(33.333333% - 10px); 
-    margin-left: 0; /*queste sono le card che si trovano sulla sinistra*/
+    margin-left: 0; /*queste sono le card che si trovano sulla sinistra
 
 }
 .pianeta__card--boundary-right{
     margin-right: 0;
-    width: calc(33.333333% - 10px);
+    width: calc(33.333333% - 10px); */
 }
 .author{
     color: blue;
@@ -122,4 +122,13 @@ div#footer{
     background-color: orange;
     padding:20px;
     margin: 0%;
+}
+.pianeta-card:nth-of-type(3n+1){
+    width: calc(33.333333% - 10px); 
+    margin-left: 0;
+}
+.pianeta-card:nth-last-of-type(3n){
+    margin-right: 0;
+    width: calc(33.333333% - 10px);
+
 }
